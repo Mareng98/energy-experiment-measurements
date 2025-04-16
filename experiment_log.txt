@@ -250,3 +250,30 @@ real	1m2.382s
 user	1m27.562s
 sys	0m1.962s
 Syncing with GitHub...
+[run-1 a5e1d1b] Auto commit after 6 commands
+ 13 files changed, 713 insertions(+)
+ delete mode 100644 noise/closure-templates/depclean/1.csv
+ create mode 100644 noise/coreNLP/proguard/1.csv
+ create mode 100644 noise/javaFaker/proguard/1.csv
+ create mode 100644 noise/openPdf/vanilla/1.csv
+ delete mode 100644 noise/shacl/vanilla/1.csv
+ delete mode 100644 noise/tika/vanilla/1.csv
+ create mode 100644 results/coreNLP/proguard/1.csv
+ create mode 100644 results/coreNLP/vanilla/1.csv
+ create mode 100644 results/error-prone/vanilla/1.csv
+ create mode 100644 results/javaFaker/proguard/1.csv
+ create mode 100644 results/openPdf/vanilla/1.csv
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+Merge conflict detected during 'git pull'. Aborting script to prevent data loss.
+Starting energy experiment run...
+Verifying Git branch in energy-experiment-measurements...
+Git branch verified: run-1
+Checking measurement output directories...
+All folders created and verified to be empty.
+[1] Running: ./energibridge.exe -o "energy-experiment-measurements/results/coreNLP/proguard/1.csv" -i 1000 java -cp "stanford-corenlp-4.5.8-models.jar:/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/coreNLP/artifacts/artifact_proguard.jar" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,pos,depparse -file coreNLPinput.txt -outputFormat conll -output.columns word > /dev/null 2>&1
+
+real	1m2.358s
+user	1m25.196s
+sys	0m1.974s
+Syncing with GitHub...
