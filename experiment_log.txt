@@ -4,4 +4,4 @@ fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tr
 Use '--' to separate paths from revisions, like this:
 'git <command> [<revision>...] -- [<file>...]'
 Error: Git repo in 'energy-experiment-measurements' is on branch 'HEAD' but expected 'run-1'.
-Please switch to the correct branch before running this script.
+Please switch to the correct branch before running this script
