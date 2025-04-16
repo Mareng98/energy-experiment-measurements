@@ -14,3 +14,12 @@ real	1m0.363s
 user	0m0.068s
 sys	0m0.319s
 Syncing with GitHub...
+[run-1 faa1f21] Auto commit after 2 commands
+ 3 files changed, 144 insertions(+)
+ create mode 100644 experiment_log.txt
+ create mode 100644 noise/coreNLP/proguard/1.csv
+ create mode 100644 results/coreNLP/proguard/1.csv
+Already up to date.
+To https://github.com/Mareng98/energy-experiment-measurements.git
+   520ffd5..faa1f21  run-1 -> run-1
+All commands completed with noise measurements and changes pushed to GitHub.
