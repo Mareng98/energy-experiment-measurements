@@ -15,3 +15,25 @@ real	1m1.352s
 user	1m23.899s
 sys	0m1.868s
 Syncing with GitHub...
+[run-1 bedde08] Auto commit after 3 commands
+ 4 files changed, 209 insertions(+)
+ create mode 100644 experiment_log.txt
+ create mode 100644 noise/coreNLP/proguard/1.csv
+ create mode 100644 results/coreNLP/proguard/1.csv
+ create mode 100644 results/coreNLP/proguard/2.csv
+Already up to date.
+To https://github.com/Mareng98/energy-experiment-measurements.git
+   96864dd..bedde08  run-1 -> run-1
+Measuring background system noise...
+[3] Running: ./energibridge.exe -o "energy-experiment-measurements/results/coreNLP/proguard/3.csv" -i 1000 java -cp "stanford-corenlp-4.5.8-models.jar:/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/coreNLP/artifacts/artifact_proguard.jar" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,pos,depparse -file coreNLPinput.txt -outputFormat conll -output.columns word > /dev/null 2>&1
+
+real	1m1.355s
+user	1m25.195s
+sys	0m1.931s
+Measuring background system noise...
+[4] Running: ./energibridge.exe -o "energy-experiment-measurements/results/coreNLP/proguard/4.csv" -i 1000 java -cp "stanford-corenlp-4.5.8-models.jar:/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/coreNLP/artifacts/artifact_proguard.jar" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,pos,depparse -file coreNLPinput.txt -outputFormat conll -output.columns word > /dev/null 2>&1
+
+real	1m3.350s
+user	1m25.528s
+sys	0m2.087s
+Syncing with GitHub...
