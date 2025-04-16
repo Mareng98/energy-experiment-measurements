@@ -1,0 +1,17 @@
+Starting energy experiment run...
+Verifying Git branch in energy-experiment-measurements...
+Git branch verified: run-1
+Checking measurement output directories...
+All folders created and verified to be empty.
+[1] Running: ./energibridge.exe -o "energy-experiment-measurements/results/coreNLP/proguard/1.csv" -i 1000 java -cp "stanford-corenlp-4.5.8-models.jar:/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/coreNLP/artifacts/artifact_proguard.jar" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,pos,depparse -file coreNLPinput.txt -outputFormat conll -output.columns word > /dev/null 2>&1
+
+real	1m2.353s
+user	1m25.117s
+sys	0m1.795s
+Measuring background system noise...
+[2] Running: ./energibridge.exe -o "energy-experiment-measurements/results/coreNLP/proguard/2.csv" -i 1000 java -cp "stanford-corenlp-4.5.8-models.jar:/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/coreNLP/artifacts/artifact_proguard.jar" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,pos,depparse -file coreNLPinput.txt -outputFormat conll -output.columns word > /dev/null 2>&1
+
+real	1m1.352s
+user	1m23.899s
+sys	0m1.868s
+Syncing with GitHub...
