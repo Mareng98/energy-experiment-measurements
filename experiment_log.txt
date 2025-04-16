@@ -30,3 +30,23 @@ real	1m1.322s
 user	1m23.272s
 sys	0m1.841s
 Syncing with GitHub...
+[run-1 eee28f3] Auto commit after 2 commands
+ 2 files changed, 96 insertions(+)
+ create mode 100644 experiment_log.txt
+ create mode 100644 results/coreNLP/proguard/1.csv
+Already up to date.
+To https://github.com/Mareng98/energy-experiment-measurements.git
+   e9baf3f..eee28f3  run-1 -> run-1
+Measuring background system noise...
+
+real	1m0.339s
+user	0m0.052s
+sys	0m0.227s
+[2] Running: ./energibridge.exe -o "energy-experiment-measurements/results/javaFaker/proguard/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/javaFaker/artifacts/artifact_proguard.jar 315000 false false
+Starting benchmark: JavaFakerBenchmark
+JavaFakerBenchmark completed 315000 iterations in 67570 ms.
+
+real	1m8.299s
+user	1m26.843s
+sys	0m1.437s
+Syncing with GitHub...
