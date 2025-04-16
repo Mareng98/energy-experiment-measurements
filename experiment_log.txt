@@ -37,3 +37,29 @@ real	1m3.350s
 user	1m25.528s
 sys	0m2.087s
 Syncing with GitHub...
+[run-1 632fc55] Auto commit after 5 commands
+ 5 files changed, 278 insertions(+)
+ create mode 100644 noise/coreNLP/proguard/2.csv
+ create mode 100644 noise/coreNLP/proguard/3.csv
+ create mode 100644 results/coreNLP/proguard/3.csv
+ create mode 100644 results/coreNLP/proguard/4.csv
+Already up to date.
+To https://github.com/Mareng98/energy-experiment-measurements.git
+   bedde08..632fc55  run-1 -> run-1
+Measuring background system noise...
+[5] Running: ./energibridge.exe -o "energy-experiment-measurements/results/javaFaker/proguard/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/javaFaker/artifacts/artifact_proguard.jar 315000 false false
+Starting benchmark: JavaFakerBenchmark
+JavaFakerBenchmark completed 315000 iterations in 89061 ms.
+
+real	1m30.312s
+user	1m54.062s
+sys	0m1.704s
+Measuring background system noise...
+[6] Running: ./energibridge.exe -o "energy-experiment-measurements/results/javaFaker/proguard/2.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/javaFaker/artifacts/artifact_proguard.jar 315000 false false
+Starting benchmark: JavaFakerBenchmark
+JavaFakerBenchmark completed 315000 iterations in 70213 ms.
+
+real	1m11.326s
+user	1m32.128s
+sys	0m1.547s
+Syncing with GitHub...
