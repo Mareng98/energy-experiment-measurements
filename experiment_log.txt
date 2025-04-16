@@ -277,3 +277,13 @@ real	1m2.358s
 user	1m25.196s
 sys	0m1.974s
 Syncing with GitHub...
+[run-1 1e2acbc] Auto commit after 2 commands
+ 10 files changed, 91 insertions(+), 575 deletions(-)
+ delete mode 100644 noise/coreNLP/proguard/1.csv
+ delete mode 100644 noise/error-prone/vanilla/1.csv
+ delete mode 100644 noise/javaFaker/proguard/1.csv
+ delete mode 100644 noise/openPdf/vanilla/1.csv
+ delete mode 100644 results/coreNLP/vanilla/1.csv
+ delete mode 100644 results/error-prone/vanilla/1.csv
+ delete mode 100644 results/javaFaker/proguard/1.csv
+ delete mode 100644 results/openPdf/vanilla/1.csv
