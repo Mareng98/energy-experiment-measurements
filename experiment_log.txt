@@ -775,3 +775,421 @@ real	1m7.328s
 user	1m26.379s
 sys	0m1.205s
 Syncing with GitHub...
+[run-1 1ddc82c] Auto commit after 61 commands
+ 61 files changed, 4241 insertions(+)
+ create mode 100644 noise/checkstyle/deptrim/3.csv
+ create mode 100644 noise/closure-templates/deptrim/1.csv
+ create mode 100644 noise/closure-templates/jlink/1.csv
+ create mode 100644 noise/closure-templates/proguard/2.csv
+ create mode 100644 noise/coreNLP/depclean/2.csv
+ create mode 100644 noise/coreNLP/deptrim/2.csv
+ create mode 100644 noise/coreNLP/jlink/2.csv
+ create mode 100644 noise/coreNLP/vanilla/2.csv
+ create mode 100644 noise/coreNLP/vanilla/3.csv
+ create mode 100644 noise/error-prone/depclean/1.csv
+ create mode 100644 noise/error-prone/deptrim/1.csv
+ create mode 100644 noise/error-prone/proguard/1.csv
+ create mode 100644 noise/flyingSaucer/depclean/1.csv
+ create mode 100644 noise/flyingSaucer/proguard/1.csv
+ create mode 100644 noise/flyingSaucer/proguard/2.csv
+ create mode 100644 noise/icij-extract/deptrim/2.csv
+ create mode 100644 noise/icij-extract/vanilla/1.csv
+ create mode 100644 noise/javaFaker/proguard/2.csv
+ create mode 100644 noise/javaparser/jlink/2.csv
+ create mode 100644 noise/javaparser/vanilla/2.csv
+ create mode 100644 noise/javaparser/vanilla/3.csv
+ create mode 100644 noise/jgit/jlink/2.csv
+ create mode 100644 noise/jgit/proguard/1.csv
+ create mode 100644 noise/jts/deptrim/2.csv
+ create mode 100644 noise/jts/jlink/1.csv
+ create mode 100644 noise/jts/vanilla/1.csv
+ create mode 100644 noise/shacl/depclean/3.csv
+ create mode 100644 noise/tika/depclean/1.csv
+ create mode 100644 noise/tika/proguard/1.csv
+ create mode 100644 noise/tika/vanilla/1.csv
+ create mode 100644 results/checkstyle/deptrim/3.csv
+ create mode 100644 results/closure-templates/jlink/1.csv
+ create mode 100644 results/closure-templates/proguard/2.csv
+ create mode 100644 results/coreNLP/depclean/2.csv
+ create mode 100644 results/coreNLP/deptrim/2.csv
+ create mode 100644 results/coreNLP/jlink/2.csv
+ create mode 100644 results/coreNLP/vanilla/2.csv
+ create mode 100644 results/coreNLP/vanilla/3.csv
+ create mode 100644 results/error-prone/depclean/1.csv
+ create mode 100644 results/error-prone/deptrim/1.csv
+ create mode 100644 results/error-prone/proguard/1.csv
+ create mode 100644 results/flyingSaucer/depclean/1.csv
+ create mode 100644 results/flyingSaucer/proguard/1.csv
+ create mode 100644 results/flyingSaucer/proguard/2.csv
+ create mode 100644 results/icij-extract/deptrim/2.csv
+ create mode 100644 results/icij-extract/vanilla/1.csv
+ create mode 100644 results/javaFaker/proguard/2.csv
+ create mode 100644 results/javaparser/jlink/2.csv
+ create mode 100644 results/javaparser/proguard/3.csv
+ create mode 100644 results/javaparser/vanilla/2.csv
+ create mode 100644 results/javaparser/vanilla/3.csv
+ create mode 100644 results/jgit/jlink/2.csv
+ create mode 100644 results/jgit/proguard/1.csv
+ create mode 100644 results/jts/deptrim/2.csv
+ create mode 100644 results/jts/jlink/1.csv
+ create mode 100644 results/jts/vanilla/1.csv
+ create mode 100644 results/shacl/depclean/3.csv
+ create mode 100644 results/tika/depclean/1.csv
+ create mode 100644 results/tika/proguard/1.csv
+ create mode 100644 results/tika/vanilla/1.csv
+Already up to date.
+To https://github.com/Mareng98/energy-experiment-measurements.git
+   c5ac27c..1ddc82c  run-1 -> run-1
+Measuring background system noise...
+
+real	1m0.335s
+user	0m0.061s
+sys	0m0.203s
+[61] Running: ./energibridge.exe -o "energy-experiment-measurements/results/tablesaw/deptrim/2.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/tablesaw/artifacts/artifact_deptrim.jar 97 false false
+Starting benchmark: TablesawBenchmark
+Setting up benchmark with 97 rows and 500 columns.
+TablesawBenchmark completed 97 iterations in 60784 ms.
+
+real	1m2.292s
+user	1m10.315s
+sys	0m0.934s
+Measuring background system noise...
+
+real	1m0.355s
+user	0m0.044s
+sys	0m0.226s
+[62] Running: ./energibridge.exe -o "energy-experiment-measurements/results/checkstyle/deptrim/4.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/checkstyle/artifacts/artifact_deptrim.jar -c /sun_checks.xml checkstyleInput/* > /dev/null 2>&1
+
+real	1m7.330s
+user	1m44.406s
+sys	0m4.841s
+Measuring background system noise...
+
+real	1m0.329s
+user	0m0.044s
+sys	0m0.211s
+[63] Running: ./energibridge.exe -o "energy-experiment-measurements/results/coreNLP/proguard/2.csv" -i 1000 java -cp "stanford-corenlp-4.5.8-models.jar:/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/coreNLP/artifacts/artifact_proguard.jar" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,pos,depparse -file coreNLPinput.txt -outputFormat conll -output.columns word > /dev/null 2>&1
+
+real	1m1.307s
+user	1m24.077s
+sys	0m1.793s
+Measuring background system noise...
+
+real	1m0.339s
+user	0m0.048s
+sys	0m0.208s
+[64] Running: ./energibridge.exe -o "energy-experiment-measurements/results/flyingSaucer/jlink/1.csv" -i 1000 /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/flyingSaucer/artifacts/jlink-runtime/bin/java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/flyingSaucer/artifacts/artifact_vanilla.jar 14500 false false
+Starting benchmark: FlyingSaucerBenchmark
+FlyingSaucerBenchmark completed 14500 iterations in 59199 ms.
+
+real	1m0.282s
+user	1m24.039s
+sys	0m1.846s
+Measuring background system noise...
+
+real	1m0.329s
+user	0m0.052s
+sys	0m0.183s
+[65] Running: ./energibridge.exe -o "energy-experiment-measurements/results/checkstyle/deptrim/5.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/checkstyle/artifacts/artifact_deptrim.jar -c /sun_checks.xml checkstyleInput/* > /dev/null 2>&1
+
+real	1m1.341s
+user	1m46.352s
+sys	0m3.794s
+Measuring background system noise...
+
+real	1m0.361s
+user	0m0.042s
+sys	0m0.225s
+[66] Running: ./energibridge.exe -o "energy-experiment-measurements/results/openPdf/proguard/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/openPdf/artifacts/artifact_proguard.jar 2850 false false
+Starting benchmark: OpenPDFBenchmark
+OpenPDFBenchmark completed 2850 iterations in 64862 ms.
+
+real	1m6.289s
+user	1m17.175s
+sys	0m1.052s
+Measuring background system noise...
+
+real	1m0.327s
+user	0m0.044s
+sys	0m0.214s
+[67] Running: ./energibridge.exe -o "energy-experiment-measurements/results/tablesaw/proguard/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/tablesaw/artifacts/artifact_proguard.jar 97 false false
+Starting benchmark: TablesawBenchmark
+Setting up benchmark with 97 rows and 500 columns.
+TablesawBenchmark completed 97 iterations in 61005 ms.
+
+real	1m2.320s
+user	1m10.730s
+sys	0m0.975s
+Measuring background system noise...
+
+real	1m0.317s
+user	0m0.049s
+sys	0m0.209s
+[68] Running: ./energibridge.exe -o "energy-experiment-measurements/results/openPdf/deptrim/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/openPdf/artifacts/artifact_deptrim.jar 2850 false false
+Starting benchmark: OpenPDFBenchmark
+OpenPDFBenchmark completed 2850 iterations in 60394 ms.
+
+real	1m1.334s
+user	1m12.791s
+sys	0m1.177s
+Measuring background system noise...
+
+real	1m0.331s
+user	0m0.054s
+sys	0m0.210s
+[69] Running: ./energibridge.exe -o "energy-experiment-measurements/results/tika/vanilla/2.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/tika/artifacts/artifact_vanilla.jar --text-all tikaInput/* > /dev/null 2>&1
+
+real	1m1.322s
+user	1m25.165s
+sys	0m2.172s
+Measuring background system noise...
+
+real	1m0.362s
+user	0m0.044s
+sys	0m0.207s
+[70] Running: ./energibridge.exe -o "energy-experiment-measurements/results/closure-templates/vanilla/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/closure-templates/artifacts/artifact_vanilla.jar 84 false false
+Starting benchmark: closureTemplatesBenchmark
+closureTemplatesBenchmark completed 84 iterations in 60387 ms.
+
+real	1m1.333s
+user	1m13.286s
+sys	0m1.582s
+Measuring background system noise...
+
+real	1m0.344s
+user	0m0.042s
+sys	0m0.209s
+[71] Running: ./energibridge.exe -o "energy-experiment-measurements/results/tablesaw/proguard/2.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/tablesaw/artifacts/artifact_proguard.jar 97 false false
+Starting benchmark: TablesawBenchmark
+Setting up benchmark with 97 rows and 500 columns.
+TablesawBenchmark completed 97 iterations in 59317 ms.
+
+real	1m0.286s
+user	1m9.376s
+sys	0m0.963s
+Measuring background system noise...
+
+real	1m0.339s
+user	0m0.048s
+sys	0m0.208s
+[72] Running: ./energibridge.exe -o "energy-experiment-measurements/results/zxing/deptrim/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/zxing/artifacts/artifact_deptrim.jar 36000 false false
+Starting benchmark: ZxingBenchmark
+ZxingBenchmark completed 36000 iterations in 60125 ms.
+
+real	1m1.319s
+user	1m3.526s
+sys	0m0.658s
+Measuring background system noise...
+
+real	1m0.340s
+user	0m0.050s
+sys	0m0.196s
+[73] Running: ./energibridge.exe -o "energy-experiment-measurements/results/tablesaw/deptrim/3.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/tablesaw/artifacts/artifact_deptrim.jar 97 false false
+Starting benchmark: TablesawBenchmark
+Setting up benchmark with 97 rows and 500 columns.
+TablesawBenchmark completed 97 iterations in 60361 ms.
+
+real	1m1.309s
+user	1m10.381s
+sys	0m1.114s
+Measuring background system noise...
+
+real	1m0.329s
+user	0m0.045s
+sys	0m0.207s
+[74] Running: ./energibridge.exe -o "energy-experiment-measurements/results/icij-extract/depclean/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/icij-extract/artifacts/artifact_depclean.jar spew -o stdout --outputFormat text --outputMetadata no --ocr no icijextractInput/* > /dev/null 2>&1
+
+real	1m1.362s
+user	14m15.756s
+sys	0m37.723s
+Measuring background system noise...
+
+real	1m0.334s
+user	0m0.056s
+sys	0m0.230s
+[75] Running: ./energibridge.exe -o "energy-experiment-measurements/results/closure-templates/jlink/2.csv" -i 1000 /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/closure-templates/artifacts/jlink-runtime/bin/java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/closure-templates/artifacts/artifact_vanilla.jar 84 false false
+Starting benchmark: closureTemplatesBenchmark
+closureTemplatesBenchmark completed 84 iterations in 62455 ms.
+
+real	1m3.312s
+user	1m17.955s
+sys	0m1.543s
+Measuring background system noise...
+
+real	1m0.332s
+user	0m0.063s
+sys	0m0.199s
+[76] Running: ./energibridge.exe -o "energy-experiment-measurements/results/zxing/deptrim/2.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/zxing/artifacts/artifact_deptrim.jar 36000 false false
+Starting benchmark: ZxingBenchmark
+ZxingBenchmark completed 36000 iterations in 59619 ms.
+
+real	1m0.333s
+user	1m3.211s
+sys	0m0.617s
+Measuring background system noise...
+
+real	1m0.328s
+user	0m0.058s
+sys	0m0.207s
+[77] Running: ./energibridge.exe -o "energy-experiment-measurements/results/checkstyle/deptrim/6.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/checkstyle/artifacts/artifact_deptrim.jar -c /sun_checks.xml checkstyleInput/* > /dev/null 2>&1
+
+real	1m3.341s
+user	1m48.169s
+sys	0m3.910s
+Measuring background system noise...
+
+real	1m0.328s
+user	0m0.054s
+sys	0m0.207s
+[78] Running: ./energibridge.exe -o "energy-experiment-measurements/results/javaparser/jlink/3.csv" -i 1000 /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/javaparser/artifacts/jlink-runtime/bin/java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/javaparser/artifacts/artifact_vanilla.jar 830 false false
+Starting benchmark: JavaParserBenchmark
+JavaParserBenchmark completed 830 iterations in 59866 ms.
+
+real	1m1.282s
+user	1m21.524s
+sys	0m1.224s
+Measuring background system noise...
+
+real	1m0.356s
+user	0m0.045s
+sys	0m0.204s
+[79] Running: ./energibridge.exe -o "energy-experiment-measurements/results/zxing/vanilla/2.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/zxing/artifacts/artifact_vanilla.jar 36000 false false
+Starting benchmark: ZxingBenchmark
+ZxingBenchmark completed 36000 iterations in 60905 ms.
+
+real	1m1.285s
+user	1m4.566s
+sys	0m0.628s
+Measuring background system noise...
+
+real	1m0.358s
+user	0m0.052s
+sys	0m0.202s
+[80] Running: ./energibridge.exe -o "energy-experiment-measurements/results/jgit/deptrim/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/jgit/artifacts/artifact_deptrim.jar 14300 false false
+Starting benchmark: JGitBenchmark
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Git repository initialized at: JGitRepo
+JGitBenchmark completed 14300 iterations in 59482 ms.
+
+real	1m3.300s
+user	0m39.696s
+sys	0m34.372s
+Measuring background system noise...
+
+real	1m0.330s
+user	0m0.048s
+sys	0m0.198s
+[81] Running: ./energibridge.exe -o "energy-experiment-measurements/results/coreNLP/vanilla/4.csv" -i 1000 java -cp "stanford-corenlp-4.5.8-models.jar:/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/coreNLP/artifacts/artifact_vanilla.jar" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,pos,depparse -file coreNLPinput.txt -outputFormat conll -output.columns word > /dev/null 2>&1
+
+real	1m0.338s
+user	1m24.522s
+sys	0m1.873s
+Measuring background system noise...
+
+real	1m0.339s
+user	0m0.051s
+sys	0m0.202s
+[82] Running: ./energibridge.exe -o "energy-experiment-measurements/results/error-prone/vanilla/1.csv" -i 1000 javac -J-Xmx2g -J"--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED" -J"--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED" -J"--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED" -XDcompilePolicy=simple -processorpath "/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/error-prone/artifacts/artifact_vanilla.jar" -Xplugin:ErrorProne --should-stop=ifError=FLOW errorproneInput/* > /dev/null 2>&1
+
+real	1m6.635s
+user	1m48.941s
+sys	0m3.133s
+Measuring background system noise...
+
+real	1m0.339s
+user	0m0.044s
+sys	0m0.217s
+[83] Running: ./energibridge.exe -o "energy-experiment-measurements/results/shacl/jlink/1.csv" -i 1000 /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/shacl/artifacts/jlink-runtime/bin/java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/shacl/artifacts/artifact_vanilla.jar 24000 false false
+Starting benchmark: ShaclBenchmark
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+ShaclBenchmark completed 24000 iterations in 59540 ms.
+
+real	1m1.294s
+user	1m15.242s
+sys	0m1.143s
+Measuring background system noise...
+
+real	1m0.329s
+user	0m0.051s
+sys	0m0.220s
+[84] Running: ./energibridge.exe -o "energy-experiment-measurements/results/error-prone/deptrim/2.csv" -i 1000 javac -J-Xmx2g -J"--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED" -J"--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED" -J"--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED" -XDcompilePolicy=simple -processorpath "/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/error-prone/artifacts/artifact_deptrim.jar" -Xplugin:ErrorProne --should-stop=ifError=FLOW errorproneInput/* > /dev/null 2>&1
+
+real	0m57.643s
+user	1m42.758s
+sys	0m2.932s
+Measuring background system noise...
+
+real	1m0.328s
+user	0m0.041s
+sys	0m0.208s
+[85] Running: ./energibridge.exe -o "energy-experiment-measurements/results/tablesaw/jlink/1.csv" -i 1000 /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/tablesaw/artifacts/jlink-runtime/bin/java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/tablesaw/artifacts/artifact_vanilla.jar 97 false false
+Starting benchmark: TablesawBenchmark
+Setting up benchmark with 97 rows and 500 columns.
+TablesawBenchmark completed 97 iterations in 59419 ms.
+
+real	1m1.293s
+user	1m9.641s
+sys	0m1.017s
+Measuring background system noise...
+
+real	1m0.331s
+user	0m0.046s
+sys	0m0.224s
+[86] Running: ./energibridge.exe -o "energy-experiment-measurements/results/javaparser/jlink/4.csv" -i 1000 /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/javaparser/artifacts/jlink-runtime/bin/java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/javaparser/artifacts/artifact_vanilla.jar 830 false false
+Starting benchmark: JavaParserBenchmark
+JavaParserBenchmark completed 830 iterations in 61261 ms.
+
+real	1m2.283s
+user	1m22.217s
+sys	0m1.200s
+Measuring background system noise...
+
+real	1m0.332s
+user	0m0.045s
+sys	0m0.202s
+[87] Running: ./energibridge.exe -o "energy-experiment-measurements/results/checkstyle/proguard/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/checkstyle/artifacts/artifact_proguard.jar -c /sun_checks.xml checkstyleInput/* > /dev/null 2>&1
+
+real	0m59.345s
+user	1m43.007s
+sys	0m3.840s
+Measuring background system noise...
+
+real	1m0.325s
+user	0m0.053s
+sys	0m0.198s
+[88] Running: ./energibridge.exe -o "energy-experiment-measurements/results/jts/depclean/1.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/jts/artifacts/artifact_depclean.jar 215 false false
+Starting benchmark: JtsBenchmark
+JtsBenchmark completed 215 iterations in 59876 ms.
+
+real	1m1.318s
+user	1m24.505s
+sys	0m1.484s
+Measuring background system noise...
+
+real	1m0.328s
+user	0m0.047s
+sys	0m0.223s
+[89] Running: ./energibridge.exe -o "energy-experiment-measurements/results/javaparser/proguard/4.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/javaparser/artifacts/artifact_proguard.jar 830 false false
+Starting benchmark: JavaParserBenchmark
+JavaParserBenchmark completed 830 iterations in 58392 ms.
+
+real	0m59.313s
+user	1m18.867s
+sys	0m1.168s
+Measuring background system noise...
+
+real	1m0.326s
+user	0m0.048s
+sys	0m0.209s
+[90] Running: ./energibridge.exe -o "energy-experiment-measurements/results/closure-templates/vanilla/2.csv" -i 1000 java -jar /home/martin/Documents/MasterThesis_ExperimentReady/benchmarks/closure-templates/artifacts/artifact_vanilla.jar 84 false false
+Starting benchmark: closureTemplatesBenchmark
+closureTemplatesBenchmark completed 84 iterations in 58957 ms.
+
+real	1m0.310s
+user	1m12.014s
+sys	0m1.341s
+Syncing with GitHub...
