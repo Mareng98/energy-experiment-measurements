@@ -1,0 +1,93 @@
+Warming up...
+
+real	0m0.334s
+user	0m0.065s
+sys	0m0.207s
+
+real	0m0.319s
+user	0m0.059s
+sys	0m0.188s
+
+real	0m0.308s
+user	0m0.062s
+sys	0m0.179s
+
+real	0m0.337s
+user	0m0.057s
+sys	0m0.204s
+
+real	0m0.326s
+user	0m0.058s
+sys	0m0.192s
+Warming up...
+
+thread 'main' panicked at src/cpu/amd.rs:20:76:
+called `Result::unwrap()` on an `Err` value: Os { code: 13, kind: PermissionDenied, message: "Permission denied" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+real	0m0.336s
+user	0m0.054s
+sys	0m0.202s
+
+thread 'main' panicked at src/cpu/amd.rs:20:76:
+called `Result::unwrap()` on an `Err` value: Os { code: 13, kind: PermissionDenied, message: "Permission denied" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+real	0m0.353s
+user	0m0.059s
+sys	0m0.201s
+
+thread 'main' panicked at src/cpu/amd.rs:20:76:
+called `Result::unwrap()` on an `Err` value: Os { code: 13, kind: PermissionDenied, message: "Permission denied" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+real	0m0.350s
+user	0m0.067s
+sys	0m0.207s
+Warming up...
+Starting benchmark: JGitBenchmark
+Git repository initialized at: JGitRepo
+Warming up...
+Starting benchmark: JGitBenchmark
+Git repository initialized at: JGitRepo
+JGitBenchmark completed 14300 iterations in 60508 ms.
+
+real	1m2.370s
+user	0m39.785s
+sys	0m33.087s
+Starting energy experiment run...
+Verifying Git branch in energy-experiment-measurements...
+Git branch verified: run-1-complement
+Creating measurement output directories for error-prone...
+All error-prone folders created.
+[1] Running: energibridge -o "energy-experiment-measurements/results/error-prone/depclean/1.csv" -i 1000 javac -J-Xmx2g -J"--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED" -J"--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED" -J"--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED" -XDcompilePolicy=simple -processorpath "/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/error-prone/artifacts/artifact_depclean.jar" -Xplugin:ErrorProne --should-stop=ifError=FLOW errorproneInput/* > /dev/null 2>&1
+Warming up...
+Starting benchmark: JGitBenchmark
+Git repository initialized at: JGitRepo
+Warming up...
+Warming up...
+Starting energy experiment run...
+Verifying Git branch in energy-experiment-measurements...
+Git branch verified: run-1-complement
+❌ Error: Existing error-prone subdirectories detected:
+energy-experiment-measurements/results/error-prone/deptrim
+energy-experiment-measurements/results/error-prone/jlink
+energy-experiment-measurements/results/error-prone/proguard
+energy-experiment-measurements/results/error-prone/depclean
+energy-experiment-measurements/results/error-prone/vanilla
+energy-experiment-measurements/noise/error-prone/deptrim
+energy-experiment-measurements/noise/error-prone/jlink
+energy-experiment-measurements/noise/error-prone/proguard
+energy-experiment-measurements/noise/error-prone/depclean
+energy-experiment-measurements/noise/error-prone/vanilla
+Please manually clean them up before rerunning.
+Warming up...
+Warming up...
+Starting energy experiment run...
+Verifying Git branch in energy-experiment-measurements...
+Git branch verified: run-1-complement
+Creating measurement output directories for error-prone...
+All error-prone folders created.
+[1] Running: energibridge -o "energy-experiment-measurements/results/error-prone/depclean/1.csv" -i 1000 javac -J-Xmx2g -J"--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED" -J"--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED" -J"--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED" -J"--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED" -XDcompilePolicy=simple -processorpath "/home/martin/Documents/MasterThesis_ExperimentReady/real_world_programs/error-prone/artifacts/artifact_depclean.jar" -Xplugin:ErrorProne --should-stop=ifError=FLOW errorproneInput/* > /dev/null 2>&1
+Warming up...
+Warming up...
