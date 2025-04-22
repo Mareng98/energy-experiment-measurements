@@ -31428,3 +31428,76 @@ real	1m0.291s
 user	1m21.037s
 sys	0m1.301s
 Syncing with GitHub...
+
+[run-1 401badf] Auto commit after 2251 commands
+ 61 files changed, 4241 insertions(+)
+ create mode 100644 noise/checkstyle/deptrim/30.csv
+ create mode 100644 noise/closure-templates/deptrim/29.csv
+ create mode 100644 noise/closure-templates/deptrim/30.csv
+ create mode 100644 noise/coreNLP/depclean/29.csv
+ create mode 100644 noise/coreNLP/depclean/30.csv
+ create mode 100644 noise/coreNLP/proguard/30.csv
+ create mode 100644 noise/error-prone/deptrim/30.csv
+ create mode 100644 noise/flyingSaucer/depclean/30.csv
+ create mode 100644 noise/flyingSaucer/vanilla/30.csv
+ create mode 100644 noise/icij-extract/jlink/30.csv
+ create mode 100644 noise/icij-extract/vanilla/30.csv
+ create mode 100644 noise/javaFaker/depclean/29.csv
+ create mode 100644 noise/javaFaker/depclean/30.csv
+ create mode 100644 noise/javaFaker/deptrim/30.csv
+ create mode 100644 noise/javaFaker/proguard/30.csv
+ create mode 100644 noise/javaparser/depclean/30.csv
+ create mode 100644 noise/javaparser/vanilla/29.csv
+ create mode 100644 noise/jgit/deptrim/30.csv
+ create mode 100644 noise/jgit/jlink/30.csv
+ create mode 100644 noise/jgit/proguard/30.csv
+ create mode 100644 noise/jts/vanilla/30.csv
+ create mode 100644 noise/shacl/jlink/28.csv
+ create mode 100644 noise/shacl/jlink/29.csv
+ create mode 100644 noise/shacl/jlink/30.csv
+ create mode 100644 noise/tika/proguard/29.csv
+ create mode 100644 noise/tika/proguard/30.csv
+ create mode 100644 noise/zxing/deptrim/30.csv
+ create mode 100644 noise/zxing/vanilla/28.csv
+ create mode 100644 noise/zxing/vanilla/29.csv
+ create mode 100644 noise/zxing/vanilla/30.csv
+ create mode 100644 results/checkstyle/deptrim/30.csv
+ create mode 100644 results/closure-templates/deptrim/29.csv
+ create mode 100644 results/closure-templates/deptrim/30.csv
+ create mode 100644 results/coreNLP/depclean/29.csv
+ create mode 100644 results/coreNLP/depclean/30.csv
+ create mode 100644 results/coreNLP/proguard/30.csv
+ create mode 100644 results/error-prone/deptrim/30.csv
+ create mode 100644 results/flyingSaucer/depclean/30.csv
+ create mode 100644 results/flyingSaucer/vanilla/30.csv
+ create mode 100644 results/icij-extract/jlink/30.csv
+ create mode 100644 results/icij-extract/vanilla/30.csv
+ create mode 100644 results/javaFaker/depclean/29.csv
+ create mode 100644 results/javaFaker/depclean/30.csv
+ create mode 100644 results/javaFaker/deptrim/30.csv
+ create mode 100644 results/javaFaker/proguard/30.csv
+ create mode 100644 results/javaparser/depclean/30.csv
+ create mode 100644 results/javaparser/vanilla/29.csv
+ create mode 100644 results/javaparser/vanilla/30.csv
+ create mode 100644 results/jgit/deptrim/30.csv
+ create mode 100644 results/jgit/jlink/30.csv
+ create mode 100644 results/jgit/proguard/30.csv
+ create mode 100644 results/jts/vanilla/30.csv
+ create mode 100644 results/shacl/jlink/28.csv
+ create mode 100644 results/shacl/jlink/29.csv
+ create mode 100644 results/shacl/jlink/30.csv
+ create mode 100644 results/tika/proguard/30.csv
+ create mode 100644 results/zxing/deptrim/30.csv
+ create mode 100644 results/zxing/vanilla/28.csv
+ create mode 100644 results/zxing/vanilla/29.csv
+ create mode 100644 results/zxing/vanilla/30.csv
+Already up to date.
+To https://github.com/Mareng98/energy-experiment-measurements.git
+   f16112e..401badf  run-1 -> run-1
+
+Measuring background system noise...
+real	1m0.317s
+user	0m0.052s
+sys	0m0.197s
+
+All commands completed with noise measurements and changes pushed to GitHub.
